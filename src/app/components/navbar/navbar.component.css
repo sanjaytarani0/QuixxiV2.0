@@ -1,0 +1,98 @@
+.mat-button-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 8px 16px;
+}
+
+.example-fill-remaining-space {
+  flex: 1 1 auto;
+}
+
+.mat-grid-tile {
+  background: lightblue;
+  margin-left: 25px;
+}
+
+.section-search .left {
+  padding-left: 10px;
+}
+
+.place-below {
+  margin-right: 80px;
+}
+
+.email-id {
+  background: grey;
+  padding: 0px;
+  margin: 0px;
+
+
+}
+
+.right-column {
+  height: 600px;
+}
+
+.formcontainer {
+  position: relative;
+  right: 160px;
+}
+
+.cryptorow {
+  position: absolute;
+  height: 90px;
+  margin: 20px;
+  width: 380px;
+}
+
+.section-transaction {
+  position: absolute;
+
+  top: 450px;
+  width: 70%;
+  height: 400px;
+  margin-left: 80px;
+}
+
+body {}
+
+
+
+.section-transaction {
+  margin-top: 40px;
+}
+
+
+ul#myfields li {
+  display: inline;
+}
+
+.wrapper {
+
+  background: grey;
+  display: inline;
+}
+
+.row-1 {
+  margin: 15px;
+  margin-left: 0px;
+}
+
+.side-nav {
+  background: black;
+}
+
+.row-1 {
+  margin-bottom: 0px;
+}
+
+.section-right {}
+
+a:hover {
+  font-weight: bold;
+}
+
+.striped {
+  margin-bottom: 50px;
+}

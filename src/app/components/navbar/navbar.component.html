@@ -1,0 +1,325 @@
+<!--Toolbar-->
+
+<mat-toolbar>
+  <mat-toolbar-row class="">
+    <span class="mat-button-wrapper">
+      <button mat-button style="Font-weight: bold;">Quixxi Connect</button>
+      <button mat-button>Transactions</button>
+      <button mat-button (click)="openSnackBar()" aria-label="Show an example snack-bar">Listings</button>
+    </span>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row class="grey lighten-5">
+
+    <span><button mat-button><i class=" material-icons" style="font-size:28px;">search</i> </button><input matInput
+        type="search" placeholder="Search Quixxi User..">
+    </span>
+    <span class="example-fill-remaining-space"></span>
+    <div class="right">
+      <span style="font-size:18px;">Sanjay@gmail.com <button mat-icon-button [matMenuTriggerFor]="menu">
+          <mat-icon>account_circle</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>
+            <mat-icon>help</mat-icon>
+            <span>Help</span>
+          </button>
+          <button mat-menu-item (click)="signOut()">
+            <mat-icon>clear</mat-icon>
+            <span>Sign Out</span>
+          </button>
+        </mat-menu>
+
+      </span>
+    </div>
+
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<!--Send Crypto-->
+
+<div class="section">
+  <div class="cryptorow ">
+    <div class="col s12 m6 l3">
+      <div class="container">
+        <p class="grey-text ">Send Crypto</p>
+        <div class="input-field">
+          <input id="email_hash" type="text" class="validate" />
+          <label for="email_hash">Email or hash</label>
+        </div>
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="amount" type="text" class="validate">
+                <label for="amount">Amount</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="currency" type="tel" class="validate">
+                <label for="currency">Currency</label>
+              </div>
+            </div>
+            <!--send button -->
+            <div class="input-field send-button ">
+              <button id="amount" class="validate btn waves-effect waves-light black">
+                Send
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 
+<mat-grid-list cols="3" rowHeight="3:1">
+  <span class="grey-text lighten-3">Send Crypto</span>
+  <mat-grid-tile><input matInput type="text" placeholder="Search Quixxi User.."></mat-grid-tile>
+
+
+</mat-grid-list> -->
+
+  <!--Wallet Section-->
+
+  <div class="row ">
+    <div class="col s4  push-s8 ">
+      <span class="grey-text transact "><b>Wallet </b></span>
+      <h1>$350.57</h1>
+      <div class="divider">
+
+      </div>
+      <table class="striped">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Item Name</th>
+            <th>Item Price</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>$0.87</td>
+          </tr>
+          <tr>
+            <td>Alan</td>
+            <td>Jellybean</td>
+            <td>$3.76</td>
+          </tr>
+          <tr>
+            <td>Jonathan</td>
+            <td>Lollipop</td>
+            <td>$7.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+  <mat-paginator [length]="50" [pageSize]="5" [pageSizeOptions]="[5, 10, 15, 30,50]">
+  </mat-paginator>
+
+  <!-- Transactions-->
+
+
+  <section class="section section-transaction scrollspy">
+    <span class="grey-text transact "><b>Transactions </b></span>
+
+    <div class="row row-1 ">
+      <div class="wrapper">
+        <div class="col s9 m2 ">
+          <p>
+            Binance
+          </p>
+        </div>
+        <div class="col s9 m2">
+          <p>
+            2018-11-06
+          </p>
+        </div>
+        <div class="col s9 m2">
+          <p>
+            sanjay@gmail.com
+          </p>
+        </div>
+        <div class="col s9 m2">
+          <p>
+            21.087
+          </p>
+        </div>
+        <div class="col s9 m2">
+          <p>
+            $73
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-1 ">
+      <div class="wrapper">
+        <div class="col s9 m2 ">
+          <p>
+            Binance
+          </p>
+        </div>
+        <div class="col s9 m2">
+          <p>
+            2018-11-06
+          </p>
+        </div>
+        <div class="col s9 m2">
+          <p>
+            sam@yahoo.com
+          </p>
+        </div>
+        <div class="col s9 m2">
+          <p>
+            50.087
+          </p>
+        </div>
+        <div class="col s9 m2">
+          <p>
+            $863
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-1 ">
+      <div class="wrapper">
+        <div class="col s9 m2 ">
+          <p>
+            Binance
+          </p>
+        </div>
+        <div class="col s9 m2">
+          <p>
+            2018-11-06
+          </p>
+        </div>
+        <div class="col s9 m2">
+          <p>
+            sameer@gmail.com
+          </p>
+        </div>
+        <div class="col s9 m2">
+          <p>
+            100
+          </p>
+        </div>
+        <div class="col s9 m2">
+          <p>
+            $10056
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-1 ">
+      <div class="wrapper">
+        <div class="col s9 m2 ">
+          <p>
+            Binance
+          </p>
+        </div>
+        <div class="col s9 m2">
+          <p>
+            2018-11-06
+          </p>
+        </div>
+        <div class="col s9 m2">
+          <p>
+            cucckkoo@gmail.com
+          </p>
+        </div>
+        <div class="col s9 m2">
+          <p>
+            10
+          </p>
+        </div>
+        <div class="col s9 m2">
+          <p>
+            $2640
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-1 ">
+      <div class="wrapper">
+        <div class="col s9 m2 ">
+          <p>
+            Binance
+          </p>
+        </div>
+        <div class="col s9 m2">
+          <p>
+            2018-11-06
+          </p>
+        </div>
+        <div class="col s9 m2">
+          <p>
+            love@gmail.com
+          </p>
+        </div>
+        <div class="col s9 m2">
+          <p>
+            10.087
+          </p>
+        </div>
+        <div class="col s9 m2">
+          <p>
+            $1860
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slider-->
+  <div class="row">
+    <div class="col s4  push-s8 ">
+      <section class="slider">
+        <ul class="slides">
+          <li>
+            <img src="../../../assets/resort1.jpg" alt="" />
+            <div class="caption center-align">
+              <h2>Take your dream vacation</h2>
+              <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+                delectus officiis dolorum mollitia minus reiciendis.
+              </h5>
+              <a href="" class="btn btn-large">Learn More</a>
+            </div>
+          </li>
+          <li>
+            <img src="../../../assets/resort1.jpg" alt="" />
+            <div class="caption left-align">
+              <h2>We work with all budget</h2>
+              <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+                delectus officiis dolorum mollitia minus reiciendis.
+              </h5>
+              <a href="" class="btn btn-large">Learn More</a>
+            </div>
+          </li>
+          <li>
+            <img src="../../../assets/resort1.jpg" alt="" />
+            <div class="caption right-align">
+              <h2>Group and individual getaways</h2>
+              <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+                delectus officiis dolorum mollitia minus reiciendis.
+              </h5>
+              <a href="" class="btn btn-large">Learn More</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+</div>
